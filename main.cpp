@@ -36,7 +36,7 @@ bool configure_port()
     // Set desired port interface
     foreach( const QSerialPortInfo p, systemPorts )
     {
-        if( p.portName().contains("/dev/ttyO4")) {
+        if( p.portName().contains("ttyO4")) {
             serial->setPort(p);
         }
     }
